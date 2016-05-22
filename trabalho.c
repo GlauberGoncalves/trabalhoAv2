@@ -15,8 +15,6 @@ Ciclano			9.00
 Beltrano		8.80
 …
 Mascote 		5.50
-    
-    
 */
 void main()
 
@@ -28,6 +26,11 @@ void main()
 
     // guardando dados digitados pelo usuario
     // nome e nota
+   
+   printf("Olá, meu nome é GlauberGoncalves e este programa pode ser visto\n");
+   printf("no seguinte endereço do github:\n");
+   printf("https://github.com/GlauberGoncalves/trabalhoAv2/blob/master/trabalho.c\n\n");
+   
     for(i=0;i<=29;i++)
     {
         printf("Entre com nome do aluno %d: ", i+1);
@@ -36,7 +39,6 @@ void main()
         scanf("%f", &nota[i]);
         n_aluno[i] = i;
     }  
-
 /*
     usei uma variavel auxiliar para trocar o valor
     que esta na primeira variavel para a segunda e o valor
@@ -59,23 +61,19 @@ void main()
              auxi = n_aluno[i];
              n_aluno[i] = n_aluno[i + 1];
              n_aluno[i + 1] = auxi;
-             
-             
          }
      }
 
     }while (opcao == 1);
-
 /*
     imprime os dados já na ordem decrescente
 */
 
     system("clear || cls");
     printf("Listagem da AV1\n");
-    printf("-------------------------\n");
-    printf("Nome do aluno\tNota\n");
+    printf("------------------------------------\n");
+    printf("Nome do aluno\t\t\tNota\n");
     
     for (i=0;i<=29;i++)    
-    printf("%s\t\t\t %2.f\n", nome[n_aluno[i]], nota[i]);
+    printf("%s   \t\t\t %2.f\n", nome[n_aluno[i]], nota[i]);
 }
-    
