@@ -26,7 +26,7 @@ void main()
 
     system("clear");
 
-   for(i=0;i<=2;i++)
+   for(i=0;i<=29;i++)
     {
         printf("Olá, meu nome é GlauberGoncalves e este programa pode ser visto\n");
         printf("no seguinte endereço do github:\n");
@@ -44,7 +44,7 @@ void main()
     {
         repetir = 0; // segundo a bolha: se for realizado 1 troca toda sequencia
        
-        for(i=0;i<=2;i++) // terá que repetir aque que nenhuma troca seja
+        for(i=0;i<=29;i++) // terá que repetir aque que nenhuma troca seja
         {                  // realizada para que saia do laço  DO WHILE 
              if (aluno[i].nota < aluno[i+1].nota)
                 {
@@ -66,7 +66,7 @@ void main()
     printf("------------------------------------\n");
     printf("Nome do aluno\t\t\tNota\n");
     
-    for (i=0;i<=2;i++)    
+    for (i=0;i<=29;i++)    
     printf("%s   \t\t\t %2.f\n", aluno[i].nome, aluno[i].nota);    
     
 }
