@@ -26,18 +26,21 @@ void main()
 
     // guardando dados digitados pelo usuario
     // nome e nota
-   
-   printf("Olá, meu nome é GlauberGoncalves e este programa pode ser visto\n");
-   printf("no seguinte endereço do github:\n");
-   printf("https://github.com/GlauberGoncalves/trabalhoAv2/blob/master/trabalho.c\n\n");
+    system("clear");
+
    
     for(i=0;i<=29;i++)
     {
+            printf("Olá, meu nome é GlauberGoncalves e este programa pode ser visto\n");
+            printf("no seguinte endereço do github:\n");
+            printf("https://github.com/GlauberGoncalves/trabalhoAv2/blob/master/trabalho.c\n\n");
+        
         printf("Entre com nome do aluno %d: ", i+1);
         scanf("%s", nome[i]);
         printf("Entre com a nota do %s : ", nome[i]);
         scanf("%f", &nota[i]);
         n_aluno[i] = i;
+        system("clear");
     }  
 /*
     usei uma variavel auxiliar para trocar o valor
